@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Instagram Feed with Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <div class="d-flex flex-row-reverse"> <!-- display:flex + la clase que hace que los iconos de la fila se me coloquen de der a izq--> 
+                  <div class="modal">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                <a class="modal-title fs-5">Create a new post</a> <!-- estilo del texto-->
+                                  <button type="button" class="btn-close"></button>
+                               </div>
+                          </div>
+                      </div>
+                </div>
+                <div class="options-button">
+                    <a class="btn btn-secondary" href="#" role="button">
+                        <i class="fa-solid fa-gear" style="color: white;"></i>
+                    </a>
+                </div>
+                <button type="button" class="btn btn-success me-2">Create a new post</button> <!-- btn-success da al botón el color VERDE /me-2 = margen DERECHO que se aplica al botón-->
+            </div>
+        </nav>
+        <div class="feed-content">
+                <div class="container">
+                    <div class="row row-col-3">
+                      <div class="col p-1"><img src="https://images.pexels.com/photos/2131791/pexels-photo-2131791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid"></div>
+                      <div class="col p-1"><img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid"></div>
+                      <div class="col p-1"><img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid"></div>
+                    </div>
+                </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </div>    
+</body>
+</html>
